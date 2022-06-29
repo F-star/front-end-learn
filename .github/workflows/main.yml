@@ -23,12 +23,17 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
+      - uses: actions/stepup-node@v3
+        with:
+          node-version: 16
+
+      - name: install dependency
+        run: npm i -g yarn && yarn
 
       - name: build static file
         run: yarn docs:build
 
-      # deploy file to yourself server
       - name: deploy file to server
         uses: wlixcc/SFTP-Deploy-Action@v1.0
         with:
