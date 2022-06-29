@@ -11,5 +11,8 @@
   },
   "devDependencies": {
     "vuepress": "^1.9.7"
+  },
+  "dependencies": {
+    "vuepress-plugin-auto-sidebar": "^2.3.2"
   }
 }
