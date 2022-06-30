@@ -13,7 +13,15 @@ module.exports = {
       { text: 'JavaScript', link: '/js/' },
       { text: 'HTML/CSS', link: '/html-css/' },
       { text: '计算机网络', link: '/network/' },
-      { text: '关于我', link: '/' }
+      { text: '算法', link: '/algorithm/' },
+      {
+        text: '教程',
+        ariaLabel: 'Language Menu？',
+        items: [
+          { text: 'konva', link: '/tutorial/konva/' },
+        ]
+      },
+      { text: '关于我', link: '/' },
     ],
     /* sidebar: {
       '/js/': [

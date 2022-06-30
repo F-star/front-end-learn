@@ -29,9 +29,8 @@ HTML 下的 script 标签会指向一个脚本地址，这个地址**允许跨�
 
 在 script 标签的 src 上，我们指定好需要服务器进行填充的回调函数名 setUser，并带上用户 id。
 
-```
+```html
 <script src="http://b.com:4000/user?id=2&callback=setUser"></script>
-
 ```
 
 上面这种直接这样写到 HTML 里不太灵活，我们改写成下面这样。
@@ -65,7 +64,7 @@ document.querySelector('button').onclick = function() {
 
 然后是服务端的处理，这里我用了 Nodejs 的 Express 框架。
 
-```js
+```js {13}
 const app = express();
 
 // ...
@@ -82,7 +81,6 @@ app.get('/user', (req, res, next) => {
 });
 
 // ...
-
 ```
 
 服务端从 url 的请求字段中提取出 id ，找到对应的用户信息（通常为 JSON 的形式），配合要填充的回调函数 setUser，组装成字符串  `setUser({"name":"前端西瓜哥"})`

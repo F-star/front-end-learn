@@ -10,9 +10,11 @@ tagline: null
 
 本项目地址：[https://github.com/F-star/front-end-learn](https://github.com/F-star/front-end-learn)
 
+我的文章首发于我的个人公众号：**前端西瓜哥**，欢迎关注。其中面试相关的会不定时更新到本网站
+
 <img style="width: 200px; height: 200px; text-align: center;" :src="$withBase('/img/公众号二维码.png')" alt="30sec">
 
-欢迎关注我的个人公众号：前端西瓜哥
+我的博客地址：[https://blog.fstars.wang](https://blog.fstars.wang/)
 
 ::: slot footer
 MIT Licensed | Copyright © 2018-2022 前端西瓜哥
