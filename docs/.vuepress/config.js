@@ -1,5 +1,5 @@
 module.exports = {
-  title: '前端系列文章',
+  title: '西瓜哥的前端面试题系列',
   description: '前端相关的文章，包括面试、算法、源码等',
   plugins: [
     ['vuepress-plugin-auto-sidebar', {
