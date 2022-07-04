@@ -9,7 +9,7 @@
 
 通常来说还会有 0 ～ length-1 的属性，结构表现上非常像一个数组。
 
-```
+```js
 const arrlike = {1:'a', 4: 'd', length: 9};
 Array.isArray(arrlike) // false
 ```
@@ -41,7 +41,7 @@ Array.prototyle.slice.call()
 
 我们可以用 Array.prototyle.slice 内置方法。
 
-```
+```js
 Array.prototype.slice.call(obj);
 [].slice.call(obj);
 ```
@@ -54,7 +54,7 @@ Array.prototype.slice.call(obj);
 
 一个例子：
 
-```
+```js
 const arrlike = {1:'a', 4: 'd', length: 9};
 const arr = Array.prototype.slice.call(arrlike);
 console.log(arr);
@@ -70,7 +70,7 @@ console.log(arr);
 
 下面是 Array.prototype.slice 的核心实现，默认 start 和 end 都在 length 范围内。
 
-```
+```js
 Array.prototype.mySlice = function(start, end) {
   if (start == undefined) start = 0;
   if (end == undefined) end = this.length;
@@ -92,7 +92,7 @@ Array.from()
 
 ES6 新出的方法，可以将类数组对象或者是可迭代对象转换为数组。
 
-```
+```js
 const arrlike = {1:'a', 4: 'd', length: 9};
 arr = Array.from(arrlike);
 console.log(arr);
@@ -106,7 +106,7 @@ console.log(arr);
 
 一般来说，调用 JS 的内置方法返回类数组对象同时是可迭代对象，我们通常喜欢用扩展运算符（`...`），更优雅。
 
-```
+```js
 const elCollection = document.getElementsByTagName('div');
 const elArray = [...elCollection];
 ```
