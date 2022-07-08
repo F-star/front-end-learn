@@ -14,6 +14,7 @@ module.exports = {
       { text: 'HTML/CSS', link: '/html-css/' },
       { text: '计算机网络', link: '/network/' },
       { text: '算法', link: '/algorithm/' },
+      { text: 'React', link: '/react/' },
       {
         text: '教程',
         ariaLabel: 'Language Menu？',
