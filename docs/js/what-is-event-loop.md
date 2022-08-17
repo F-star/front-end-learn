@@ -1,5 +1,5 @@
 
-# JS 中的 Event Loop 是什么？
+# Event Loop 是什么？
 
 大家好，我是前端西瓜哥，今天来认识一下什么是 Event Loop。
 
